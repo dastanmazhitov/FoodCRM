@@ -9,7 +9,7 @@ class TablesViewSet(generics.ListCreateAPIView):
 
 
 class TablesDetailView(generics.RetrieveUpdateDestroyAPIView):
-    queryset = TablesSerializer.objects.all()
+    queryset = Tables.objects.all()
     serializer_class = TablesSerializer
 
 
